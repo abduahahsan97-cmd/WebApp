@@ -11,7 +11,7 @@ curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 curl -fsSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
 
 apt-get update
-ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18
+ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql17
 
 echo "[startup] Ensuring Python packages are installed..."
 python -m pip install --upgrade pip
